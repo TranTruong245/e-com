@@ -15,8 +15,12 @@ const AddressUsersModal = (props) => {
                 let res = await getDetailAddressUserByIdService(id)
                 if (res && res.errCode === 0) {
                     setInputValues({
-                        ...inputValues, ["isActionUpdate"]: true, ["shipName"]: res.data.shipName, ["shipAdress"]: res.data.shipAdress
-                        , ["shipEmail"]: res.data.shipEmail, ["shipPhonenumber"]: res.data.shipPhonenumber
+                        ...inputValues,
+                         isActionUpdate: true,
+                          shipName: res.data.shipName,
+                           shipAdress: res.data.shipAdress,
+                            shipEmail: res.data.shipEmail,
+                             shipPhonenumber: res.data.shipPhonenumber
                     })
                 }
             }

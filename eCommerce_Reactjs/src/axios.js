@@ -1,23 +1,22 @@
-import axios from "axios";
-import _ from "lodash";
-require("dotenv").config();
+import axios from 'axios';
+import _ from 'lodash';
+require('dotenv').config();
 
 const instance = axios.create({
     baseURL: process.env.REACT_APP_BACKEND_URL,
 
     //  withCredentials: true
 });
-if (localStorage.getItem("token")) {
+if (localStorage.getItem('token')) {
     instance.interceptors.request.use(
         (config) => {
-            config.headers.authorization =
-                "Bearer " + localStorage.getItem("token").replaceAll('"', "");
+            config.headers.authorization = 'Bearer ' + localStorage.getItem('token').replaceAll('"', '');
 
             return config;
         },
         (error) => {
             return Promise.reject(error);
-        }
+        },
     );
 }
 

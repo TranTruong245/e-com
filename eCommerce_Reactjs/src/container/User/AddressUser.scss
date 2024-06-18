@@ -1,9 +1,8 @@
-.box-heading{
+.box-heading {
     border-bottom: 1px solid #efefef;
     padding-bottom: 20px;
-    .content-right{
-
-        .wrap-add-address{
+    .content-right {
+        .wrap-add-address {
             background-color: #ee4d2d;
             text-transform: capitalize;
             border-radius: 2px;
@@ -13,46 +12,41 @@
             padding: 6px 10px;
             cursor: pointer;
 
-            span{
+            span {
                 margin-left: 8px;
             }
-            &:hover{
-               opacity: 0.8;
+            &:hover {
+                opacity: 0.8;
             }
         }
     }
-    
 }
-.box-address-user{
+.box-address-user {
     display: flex;
     padding: 20px;
     justify-content: space-between;
     border-bottom: 1px solid #efefef;
-    .content-left{
-      
-      .box-label{
-        display: flex;
-        gap: 20px;
-      
-        width: 100%;
-        .label{
-            color: #555555cc;
-            line-height: 1.8rem;
+    .content-left {
+        .box-label {
+            display: flex;
+            gap: 20px;
+
+            width: 100%;
+            .label {
+                color: #555555cc;
+                line-height: 1.8rem;
+            }
+            .content {
+                line-height: 1.8rem;
+            }
         }
-        .content{
-            line-height: 1.8rem;
-        }
-      }
-        
     }
-    .content-right{
-        
-        .text-underline{
+    .content-right {
+        .text-underline {
             text-decoration: underline;
             margin-right: 20px;
             color: #555555;
             cursor: pointer;
         }
-        
     }
 }

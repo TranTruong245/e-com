@@ -5,12 +5,7 @@ import SideBar from './SideBar';
 import Home from './Home';
 import ManageUser from './User/ManageUser';
 import Adduser from './User/Adduser';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ManageCategory from './Category/ManageCategory';
 import AddCategory from './Category/AddCategory';
 import ManageBrand from './Brand/ManageBrand';
@@ -50,9 +45,7 @@ import StockProduct from './Statistic/StockProduct';
 
 function HomePageAdmin(props) {
     return (
-
         <Router>
-
             <Switch>
                 <div className="sb-nav-fixed">
                     <Header />
@@ -211,12 +204,9 @@ function HomePageAdmin(props) {
                             <Footer />
                         </div>
                     </div>
-
                 </div>
             </Switch>
-
         </Router>
-
     );
 }
 

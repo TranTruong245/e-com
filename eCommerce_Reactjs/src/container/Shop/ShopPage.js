@@ -8,22 +8,19 @@ import Footer from '../Footer/Footer';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 function ShopPage(props) {
-
     useEffect(async () => {
         window.scrollTo(0, 0);
-    }, [])
+    }, []);
 
-
-    const [categoryId, setcategoryId] = useState('')
-    const [brandId, setbrandId] = useState('')
-    const myRef = useRef(null)
+    const [categoryId, setcategoryId] = useState('');
+    const [brandId, setbrandId] = useState('');
+    const myRef = useRef(null);
     let handleRecevieDataCategory = (code) => {
-        setcategoryId(code)
-    }
+        setcategoryId(code);
+    };
     let handleRecevieDataBrand = (code) => {
-
-        setbrandId(code)
-    }
+        setbrandId(code);
+    };
     return (
         <div>
             <section ref={myRef} className="banner_area">
@@ -35,9 +32,8 @@ function ShopPage(props) {
                                 <p>Hãy lựa chọn sản phẩm phù hợp cho chính mình</p>
                             </div>
                             <div className="page_link">
-                                <Link to={"/"}>Trang chủ</Link>
-                                <Link to={"/shop"}>Cửa hàng</Link>
-                               
+                                <Link to={'/'}>Trang chủ</Link>
+                                <Link to={'/shop'}>Cửa hàng</Link>
                             </div>
                         </div>
                     </div>
@@ -57,13 +53,9 @@ function ShopPage(props) {
                     {/* <Pagination amountPage={3}
                         myFunction={{ changePage: handleChangePage, changePerPage: handleChangePage }}></Pagination> */}
                 </div>
-
             </section>
             {/* <Footer /> */}
         </div>
-
-
-
     );
 }
 

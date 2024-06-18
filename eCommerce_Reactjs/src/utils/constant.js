@@ -1,7 +1,6 @@
 export const path = {
     HOME: '/',
     HOMEPAGE: '/home',
-
 };
 export const SHOP_CART = {
     ADD_ITEM_CART_START: 'ADD_ITEM_CART_START',
@@ -13,39 +12,37 @@ export const SHOP_CART = {
     GET_ITEM_CART_FAILD: 'GET_ITEM_CART_FAILD',
 
     CHOOSE_VOUCHER_START: 'CHOOSE_VOUCHER_START',
-    CHOOSE_TYPESHIP_START: 'CHOOSE_TYPESHIP_START'
-}
-
+    CHOOSE_TYPESHIP_START: 'CHOOSE_TYPESHIP_START',
+};
 
 export const CRUD_ACTIONS = {
     CREATE: 'CREATE',
-    UPDATE: 'UPDATE'
-}
+    UPDATE: 'UPDATE',
+};
 export const manageActions = {
-    ADD: "ADD",
-    EDIT: "EDIT",
-    DELETE: "DELETE"
+    ADD: 'ADD',
+    EDIT: 'EDIT',
+    DELETE: 'DELETE',
 };
 
 export const dateFormat = {
-    SEND_TO_SERVER: 'DD/MM/YYYY'
+    SEND_TO_SERVER: 'DD/MM/YYYY',
 };
 
 export const YesNoObj = {
     YES: 'Y',
-    NO: 'N'
-}
+    NO: 'N',
+};
 export const USER_ROLE = {
     ADMIN: 'R1',
     USER: 'R2',
-
-}
+};
 export const PAGINATION = {
-    pagerow: 6
-}
+    pagerow: 6,
+};
 export const PREFIX_CURRENCY = {
-    minimumFractionDigits: 0
-}
+    minimumFractionDigits: 0,
+};
 export const EXCHANGE_RATES = {
-    USD: 24300
-}
+    USD: 24300,
+};

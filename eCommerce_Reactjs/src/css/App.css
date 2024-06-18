@@ -1,18 +1,16 @@
-.box-email-verify{
+.box-email-verify {
     display: flex;
     align-items: center;
-    
 }
-.box-email-verify svg{
-   margin-left: 4px;
-    
+.box-email-verify svg {
+    margin-left: 4px;
 }
-.text-verify{
+.text-verify {
     color: blue;
     cursor: pointer;
     text-decoration: underline;
 }
-.carousel-inner{
+.carousel-inner {
     width: 452px !important;
     height: 450px !important;
 }
